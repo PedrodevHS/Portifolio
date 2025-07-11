@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio - Pedro Henrique</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:wght@300;500;700&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #e5e5e5;
+    }
+    header {
+      background-color: #111;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #1a1a1a;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #aaa;
+      text-decoration: none;
+      font-size: 1.5rem;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background-color: #1a1a1a;
+      margin-top: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.05);
+    }
+    h1, h2, h3 {
+      color: #fff;
+    }
+    a {
+      color: #ccc;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #fff;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    p {
+      margin-bottom: 0.8rem;
+    }
+    article {
+      margin-bottom: 2rem;
+    }
+    .code-block {
+      background-color: #0d0d0d;
+      padding: 1.5rem;
+      border-radius: 10px;
+      font-family: 'Fira Code', monospace;
+      font-size: 0.95rem;
+      color: #d4d4d4;
+      white-space: pre-line;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pedro Henrique</h1>
+    <p>Desenvolvedor Back-End | Node.js | Integrações com Google Sheets | JS puro</p>
+    <p>📧 pedrohenriquesouzadeveloper@gmail.com | 💼 <a href="https://www.linkedin.com/in/pedro-henrique-souza-092950259/">LinkedIn</a> | 🖥 <a href="https://github.com/PedrodevHS">GitHub</a></p>
+  </header>
+
+  <nav>
+    <a href="sobre.html">👤</a>
+    <a href="projetos.hmtl">💡</a>
+    <a href="habilidades.html">🛠️</a>
+    <a href="experiencia.html">📁</a>
+    <a href="formacao.html">🎓</a>
+  </nav>
+
+  <section>
+    <h2>Meus Projetos</h2>
+
+    <article class="code-block">
+      <h3>📄 Gerador de Pró-Labore</h3>
+      <p>Aplicação que permite preencher e gerar documentos de pró-labore com os dados digitados.</p>
+      <ul>
+        <li>Frontend em HTML, CSS e JavaScript</li>
+        <li>Armazena dados em tabela logo abaixo do formulário</li>
+        <li>Utiliza API externa para preencher dados automaticamente via CNPJ</li>
+        <li>Hospedado no FileZilla</li>
+        <li><a href="https://prolabore.suncred.com.br/" target="_blank">Acesse o projeto</a></li>
+      </ul>
+    </article>
+
+    <article class="code-block">
+      <h3>🤖 IA do Crédito</h3>
+      <p>Ferramenta de simulação de crédito com análise automatizada baseada em dados do CNPJ.</p>
+      <ul>
+        <li>HTML, CSS e JS no frontend, backend em Node.js</li>
+        <li>Integração com a API da BrasilAPI para busca de dados</li>
+        <li>Diagnóstico final enviado por e-mail via backend</li>
+        <li>Campos preenchidos automaticamente conforme o CNPJ</li>
+        <li><a href="https://iadocredito.suncred.com.br/" target="_blank">Acesse o projeto</a></li>
+      </ul>
+    </article>
+
+    <article class="code-block">
+      <h3>📊 Teia da Luz – Sistema de Gestão de Recursos</h3>
+      <p>Projeto completo criado para uma organização social. Desenvolvi um sistema capaz de gerar planilhas dinâmicas no Google Sheets a partir do cadastro de associados, produtos e obras.</p>
+      <ul>
+        <li>Backend: Node.js com Express</li>
+        <li>Integração: API do Google Sheets (autenticação com chave de serviço)</li>
+        <li>Front-end: HTML/CSS + JS puro (fetch assíncrono)</li>
+        <li>Automação: Criação de planilhas por obra, registro de valores mensais e cálculo de comissões</li>
+        <li>Deploy: Replit e hospedagem via FileZilla</li>
+        <li>Status: Em andamento, com última etapa pendente de ajuste final</li>
+      </ul>
+    </article>
+
+  </section>
+</body>
+</html>

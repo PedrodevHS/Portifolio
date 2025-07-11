@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio - Pedro Henrique</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:wght@300;500;700&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #e5e5e5;
+    }
+
+    header {
+      background-color: #111;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #1a1a1a;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: #aaa;
+      text-decoration: none;
+      font-size: 1.5rem;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background-color: #1a1a1a;
+      margin-top: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #fff;
+    }
+
+    a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #fff;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    p {
+      margin-bottom: 0.8rem;
+    }
+
+    article {
+      margin-bottom: 2rem;
+    }
+
+    #sobre {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    #sobre img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #fff;
+    }
+
+    .code-block {
+      background-color: #0d0d0d;
+      padding: 1.5rem;
+      border-radius: 10px;
+      font-family: 'Fira Code', monospace;
+      font-size: 0.95rem;
+      color: #d4d4d4;
+      white-space: pre-line;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    .code-block p {
+      margin: 0.5rem 0;
+      color: #ccc;
+      text-align: justify;
+      text-indent: 2rem;
+      line-height: 1.6;
+      word-spacing: 0.05rem;
+      white-space: normal;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Pedro Henrique</h1>
+    <p>Desenvolvedor Back-End | Node.js | Integrações com Google Sheets | JS puro</p>
+    <p>📧 pedrohenriquesouzadeveloper@gmail.com | 💼 <a
+        href="https://www.linkedin.com/in/pedro-henrique-souza-092950259/">LinkedIn</a> | 🖥 <a
+        href="https://github.com/PedrodevHS">GitHub</a></p>
+  </header>
+
+  <nav>
+    <a href="sobre.html">👤</a>
+    <a href="projetos.html">💡</a>
+    <a href="habilidades.html">🛠️</a>
+    <a href="experiencia.html">📁</a>
+    <a href="formacao.html">🎓</a>
+  </nav>
+
+  <section id="sobre" style="flex-direction: column; align-items: center; text-align: center;">
+    <img id="perfil-img" src="../imags/WhatsApp Image 2025-07-10 at 16.06.41.jpeg" alt="Foto de perfil Pedro Henrique"
+      style="width: 220px; height: 220px; cursor: pointer;" />
+
+    <div class="code-block" style="margin-top: 1rem;">
+      <h2>Detalhes</h2>
+      <p>Idade: 20 anos</p>
+      <p>Data de Nascimento: 12 de Março de 2005</p>
+      <p>Cidade: Uberlândia/MG</p>
+      <p>Faculdade: Universidade Federal de Uberlândia (UFU)</p>
+      <p>Objetivo: Encontrar oportunidades como dev Júnior ou estagiário e aprimorar meus conhecimentos constantemente.
+      </p>
+    </div>
+
+    <div class="code-block">
+      <h2>Sobre Mim</h2>
+      <p>Sou desenvolvedor com foco em back-end e integração de sistemas. Atuei em um projeto real para uma organização
+        social, onde automatizei o fluxo de cadastro e acompanhamento de recursos em tempo real usando Node.js, Express
+        e Google Sheets API.</p>
+      <p>Desenvolvi desde a lógica do servidor até o consumo no front-end com JavaScript puro, enfrentando e resolvendo
+        desafios reais de deploy, autenticação, manipulação dinâmica de planilhas e envio automatizado de dados.</p>
+      <p>Busco sempre o equilíbrio entre um código limpo, manutenção simples e entregas funcionais. Estou disponível
+        para estágio ou posições júnior onde eu possa somar, aprender com o time e crescer com entregas reais.</p>
+    </div>
+  </section>
+
+  <div id="img-modal"
+    style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.85); justify-content:center; align-items:center; z-index:2000;">
+    <img src="../imags/WhatsApp Image 2025-07-10 at 16.06.41.jpeg" alt="Foto expandida"
+      style="max-width:90%; max-height:90%; border-radius:10px; box-shadow:0 0 20px #fff; cursor: pointer;"
+      onclick="fecharModal()" />
+  </div>
+
+  <script>
+    const perfilImg = document.getElementById('perfil-img');
+    const modal = document.getElementById('img-modal');
+
+    perfilImg.addEventListener('click', () => {
+      modal.style.display = 'flex';
+    });
+
+    function fecharModal() {
+      modal.style.display = 'none';
+    }
+
+    // Também fecha ao apertar Esc
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') fecharModal();
+    });
+  </script>
+</body>
+
+</html>

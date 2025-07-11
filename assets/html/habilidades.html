@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio - Pedro Henrique</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:wght@300;500;700&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #e5e5e5;
+    }
+    header {
+      background-color: #111;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #1a1a1a;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #aaa;
+      text-decoration: none;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background-color: #1a1a1a;
+      margin-top: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.05);
+    }
+    h1, h2, h3 {
+      color: #fff;
+    }
+    a {
+      color: #ccc;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #fff;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    p {
+      margin-bottom: 0.8rem;
+    }
+    article {
+      margin-bottom: 2rem;
+    }
+    .habilidade {
+      margin-bottom: 0.5rem;
+      padding: 0.8rem 1rem;
+      background-color: #121212;
+      border-left: 3px solid #888;
+      font-family: 'Fira Code', monospace;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      border-radius: 6px;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+    .habilidade:hover {
+      background-color: #2a2a2a;
+      transform: scale(1.01);
+    }
+    .habilidade img {
+      width: 30px;
+      height: 30px;
+      filter: invert(1) brightness(1.5);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pedro Henrique</h1>
+    <p>Desenvolvedor Back-End | Node.js | Integrações com Google Sheets | JS puro</p>
+    <p>📧 pedrohenriquesouzadeveloper@gmail.com  | 💼 <a href="https://www.linkedin.com/in/pedro-henrique-souza-092950259/">LinkedIn</a> | 🖥 <a href="https://github.com/PedrodevHS">GitHub</a></p>
+  </header>
+
+  <nav>
+    <a href="sobre.html">👤</a>
+    <a href="projetos.html">💡</a>
+    <a href="habilidades.html">🛠️</a>
+    <a href="experiencia.html">📁</a>
+    <a href="formacao.html">🎓</a>
+  </nav>
+
+  <section>
+    <h2>Hard Skills</h2>
+    <div class="habilidade"><img src="../icons/node-js.png" alt="Node.js" />Node.js e Express para criação de APIs REST</div>
+    <div class="habilidade"><img src="../icons/google.png" alt="Google Sheets" />Integração com Google Sheets via API</div>
+    <div class="habilidade"><img src="../icons/pensamento-logico.png" alt="Lógica" />Lógica de programação aplicada</div>
+    <div class="habilidade"><img src="../icons/tarefas.png" alt="Formulários" />Formulários dinâmicos no front-end</div>
+    <div class="habilidade"><img src="../icons/tips-tricks_14913367.png" alt="JS" />Manipulação de dados em JavaScript</div>
+    <div class="habilidade"><img src="../icons/lancamento-de-foguete-espacial.png" alt="Deploy" />Deploy com Replit e ambiente de produção</div>
+    <div class="habilidade"><img src="../icons/html.png" alt="HTML/CSS/JS" />HTML, CSS e JavaScript puro</div>
+  </section>
+
+  <section>
+    <h2>Soft Skills</h2>
+    <div class="habilidade"><img src="../icons/trabalho-em-equipe.png" alt="Equipe" />Trabalho em equipe</div>
+    <div class="habilidade"><img src="../icons/pensamento-logico.png" alt="Problemas" />Resolução de problemas</div>
+    <div class="habilidade"><img src="../icons/comunicacao.png" alt="Comunicação" />Comunicação clara</div>
+    <div class="habilidade"><img src="../icons/tarefas.png" alt="Organização" />Organização e disciplina</div>
+    <div class="habilidade"><img src="../icons/tips-tricks_14913367.png" alt="Aprendizado" />Aprendizado contínuo</div>
+  </section>
+</body>
+</html>
