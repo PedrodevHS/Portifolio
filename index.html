@@ -1,10 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta http-equiv="refresh" content="0; url=assets/html/sobre.html" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Redirecionando...</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #e5e5e5;
+      font-family: 'Fira Code', monospace;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #ccc;
+      text-align: center;
+    }
+
+    .loader {
+      border: 4px solid #1a1a1a;
+      border-top: 4px solid #ff9800;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+      margin-top: 2rem;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    a {
+      color: #ff9800;
+      text-decoration: none;
+      margin-top: 1.2rem;
+    }
+  </style>
 </head>
 <body>
-  <p>Redirecionando para o portfólio... <a href="assets/html/sobre.html">Clique aqui se não for redirecionado</a>.</p>
+  <h1>Redirecionando para o Portfólio...</h1>
+  <p>Carregando sua experiência com estilo 🔁</p>
+  <div class="loader"></div>
+  <a href="assets/html/sobre.html">Ou clique aqui se não for redirecionado</a>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = "assets/html/sobre.html";
+    }, 2500); // 2.5 segundos
+  </script>
 </body>
 </html>
